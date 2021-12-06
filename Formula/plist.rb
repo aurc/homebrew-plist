@@ -5,21 +5,21 @@
 class Plist < Formula
   desc "CLI tool to convert Apple's plist files into Yaml and Json."
   homepage "https://github.com/aurc/homebrew-tap"
-  version "1.1.10"
+  version "1.1.11"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/aurc/plist/releases/download/v1.1.10/plist_1.1.10_darwin_arm64.tar.gz"
-      sha256 "1d74f007d7b0dfc9ca6a8bfbd7d639c68d572cfe70d368f1651d1ffe19df97e0"
+      url "https://github.com/aurc/plist/releases/download/v1.1.11/plist_1.1.11_darwin_arm64.tar.gz"
+      sha256 "02413bcf1c79372bb83f019dc672a7b70c784652c6f501547d2fffe2e1e2dc61"
 
       def install
         bin.install "plist"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aurc/plist/releases/download/v1.1.10/plist_1.1.10_darwin_amd64.tar.gz"
-      sha256 "1f75cad00b05eefda96fb0bca71dacaa1eadfc02fbf69308ef4be3cedcb59400"
+      url "https://github.com/aurc/plist/releases/download/v1.1.11/plist_1.1.11_darwin_amd64.tar.gz"
+      sha256 "c4985575f9b8ad503812ae1668922bdd18f2a61ac0c80bb62b24db14f9312ead"
 
       def install
         bin.install "plist"
@@ -29,16 +29,16 @@ class Plist < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aurc/plist/releases/download/v1.1.10/plist_1.1.10_linux_arm64.tar.gz"
-      sha256 "fb066d8943fd74a948c3f78f10df416775cd5c0bbc692336945b800c0e042069"
+      url "https://github.com/aurc/plist/releases/download/v1.1.11/plist_1.1.11_linux_arm64.tar.gz"
+      sha256 "74abadda708fa58949e919abd8cd31771199ac04f3070df004481b3cd4aa9c88"
 
       def install
         bin.install "plist"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aurc/plist/releases/download/v1.1.10/plist_1.1.10_linux_amd64.tar.gz"
-      sha256 "5863ad54d8816481695a0fde2caa8c4e4e805e79fed57993d81c3b675e015cfb"
+      url "https://github.com/aurc/plist/releases/download/v1.1.11/plist_1.1.11_linux_amd64.tar.gz"
+      sha256 "33027794139fbfb8205c859e7868e7538628ea1c0193f8b8e7e0ddff5e8a37c1"
 
       def install
         bin.install "plist"
